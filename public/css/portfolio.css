@@ -135,7 +135,6 @@ p{
 /* ===== HOME PAGE STYLINGS ===== */
 
 .hex-div{
-    /* background-image: url("/images/SVG/hex.svg"); */
     position: relative;
     text-align: center;
     /* Border styles */
@@ -144,14 +143,13 @@ p{
     /* border-color: red green blue yellow; */
     border-width: 6px 10px 7px 10px; 
     transform: rotateY(180deg);
-    /* height:250px;
-    width:100%; */
 
  }
-.hex-img{
 
+.hex-img{
 width:100%;
  }
+
  .info-box{
     padding: 2% 5%;
 }
@@ -205,56 +203,20 @@ width:100%;
  
 }
 
-#portfolio-btn.button {
+
+  /* ====== PORTFOLIO BUTTONS ====== */
+  
+  /* #portfolio-btn.button2 {
+    color: rgba(158, 12, 12, 0.6);
+    box-shadow: rgba(255, 255, 255, 0.4) 0 0px 0px 2px inset;
+} */
+/* all portfolio buttons colored grey rollover - teal */
+  #portfolio-btn {
     color: rgba(230, 230, 230, 0.6);
     box-shadow: rgba(255, 255, 255, 0.4) 0 0px 0px 2px inset;
 }
 
-#portfolio-btn.button:hover {
-    color: rgba(255, 255, 255, 0.85);
-    /* box-shadow: rgba(255, 255, 255, 0.7) 0 0px 0px 40px inset; */
-    box-shadow:#1abc9c  0 0px 0px 40px inset; 
-}
-
-
-#portfolio-btn.button2 {
-    color: rgba(230, 230, 230, 0.6);
-    box-shadow: rgba(255, 255, 255, 0.4) 0 0px 0px 2px inset;
-}
-
-#portfolio-btn.button2:hover {
-    color: rgba(255, 255, 255, 0.85);
-    /* box-shadow: rgba(255, 255, 255, 0.7) 0 0px 0px 40px inset; */
-    box-shadow:#1abc9c  0 0px 0px 40px inset; 
-}
-
-#portfolio-btn.button3 {
-    color: rgba(230, 230, 230, 0.6);
-    box-shadow: rgba(255, 255, 255, 0.4) 0 0px 0px 2px inset;
-}
-
-#portfolio-btn.button3:hover {
-    color: rgba(255, 255, 255, 0.85);
-    /* box-shadow: rgba(255, 255, 255, 0.7) 0 0px 0px 40px inset; */
-    box-shadow:#1abc9c  0 0px 0px 40px inset; 
-}
-#portfolio-btn.button4 {
-    color: rgba(230, 230, 230, 0.6);
-    box-shadow: rgba(255, 255, 255, 0.4) 0 0px 0px 2px inset;
-}
-
-#portfolio-btn.button4:hover {
-    color: rgba(255, 255, 255, 0.85);
-    /* box-shadow: rgba(255, 255, 255, 0.7) 0 0px 0px 40px inset; */
-    box-shadow:#1abc9c  0 0px 0px 40px inset; 
-}
-#portfolio-btn.button5 {
-    color: rgba(230, 230, 230, 0.6);
-    box-shadow: rgba(255, 255, 255, 0.4) 0 0px 0px 2px inset;
-   
-}
-
-#portfolio-btn.button5:hover {
+#portfolio-btn:hover {
     color: rgba(255, 255, 255, 0.85);
     /* box-shadow: rgba(255, 255, 255, 0.7) 0 0px 0px 40px inset; */
     box-shadow:#1abc9c  0 0px 0px 40px inset; 

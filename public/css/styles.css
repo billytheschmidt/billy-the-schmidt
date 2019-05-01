@@ -102,7 +102,6 @@ p{
  /* ===== HOME PAGE STYLINGS ===== */
 
 .hex-div{
-    /* background-image: url("/images/SVG/hex.svg"); */
     position: relative;
     text-align: center;
     /* Border styles */
@@ -110,8 +109,6 @@ p{
     border-color: black;
     /* border-color: red green blue yellow; */
     border-width: 6px 6px 6px 6px; 
-    
-
  }
 .hex-img{
 width:100%;
@@ -124,8 +121,7 @@ width:100%;
     background-color: #444;
     border-radius: 5px;
     padding-top: 1%;
-    padding-left: 5%;
-        
+    padding-left: 5%;       
 }
 .pic-and-hello{
     display: grid;
@@ -271,9 +267,6 @@ color: rgb(230,230,230);
 
 
 
-
-
-
 /* ======== PORTFOLIO PAGE ======== */
 
 .scroller {
@@ -284,8 +277,6 @@ color: rgb(230,230,230);
     margin: 10px auto;
     border: 0;
   }
-
-
 
 
 .footer-padding {
