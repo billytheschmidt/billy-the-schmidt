@@ -1,0 +1,335 @@
+
+
+
+h1{
+    font-size: 4vw;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+
+}
+p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3vw;
+    line-height: 3vw;;
+}
+
+.scroll-size{
+    /* background: #F1F1FA; */
+    width: 80%;
+    /* height: 300px; */
+    display: block;
+    margin: 10px auto;
+    border: 0;
+  }
+
+.body-dark{
+    background-color: rgb(50, 50, 50); 
+}
+
+.body-darker{
+    background-color: rgb(23, 23, 23); 
+}
+.body-even-darker{
+   background-color: rgb(14, 13, 13); 
+}
+
+.portfolio-header{
+    padding-top: 2%;
+    font-size: 6vw;
+    letter-spacing: 4px;
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color: rgb(230,230,230);
+}
+.small-portfolio-header{
+    color:white;
+    /* padding-top: 3%; */
+    text-align: left;
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color: rgb(230,230,230);
+    /* font-size: 3vw; */
+    }
+    #para-style{
+        padding: 2%;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 2.5vw;
+        line-height: 3vw;
+        color: white;
+        text-align: center;
+    }
+
+ /*  ======= NAV BAR STYLES ======= */
+
+.container-fluid {
+    padding-top: 1%;
+    padding-bottom: 1%;;
+}
+
+.navbar {
+    background-color: rgb(230, 230, 230);  
+    /* background-color:white;   */
+    /* background-image: linear-gradient(to bottom right, red, yellow); */
+    /* background-image: linear-gradient(rgba(99, 0, 0, 0.66),rgba(0, 0, 82, 0.708), rgba(148, 148, 0, 0.92)); */
+    /* background-image: linear-gradient(to bottom right, rgba(211, 9, 9, 0.783), rgba(146, 146, 76, 0.838)); */
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 2.7vw;
+    letter-spacing: 2px;
+    font-family: 'Amatic SC', cursive;
+    color: rgb(66, 65, 65);     
+}
+.navbar-nav{
+}
+
+.navbar-nav li a:hover {
+    color: #1abc9c !important;
+}
+
+/* HEADER NAME BILLY SCHMIDT COLOR */
+.navbar-default .navbar-brand {
+    color: #2b2b2c;
+}
+
+/* MENU ITEMS COLOR  */
+.navbar-default .navbar-nav>li>a {
+
+}
+
+
+
+ /* ====== BUTTON DIVS ===== */
+
+ .home_btn{
+    border:solid;
+    border-width: 2px;
+    border-radius: 5%;
+ }
+ .portfolio_btn{
+     border:solid;
+     border-width: 2px;
+     border-radius: 5%;
+ }
+.blog_btn{
+    border:solid;
+    border-width: 2px;
+    border-radius: 5%;
+}
+
+
+.navbar-brand{
+    padding-bottom: 2%;
+    font-size: 7vw;
+    letter-spacing: 2px;
+    font-family: 'Amatic SC', cursive;
+}
+
+
+/* ===== HOME PAGE STYLINGS ===== */
+
+.hex-div{
+    /* background-image: url("/images/SVG/hex.svg"); */
+    position: relative;
+    text-align: center;
+    /* Border styles */
+    border-style: solid;
+    border-color: rgb(94, 93, 93);
+    /* border-color: red green blue yellow; */
+    border-width: 6px 10px 7px 10px; 
+    transform: rotateY(180deg);
+    /* height:250px;
+    width:100%; */
+
+ }
+.hex-img{
+
+width:100%;
+ }
+ .info-box{
+    padding: 2% 5%;
+}
+.more-info-div{
+    position: relative;
+    background-color: #444;
+    border-radius: 5px;
+    padding: 2% 2% 2% 5%;
+}
+
+
+
+/* PORTFOLIO BUTTONS */
+.wrap {
+    position: relative;
+    text-align: center;
+    /* padding: 4%; */
+}
+
+#portfolio-btn {
+    -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    display: inline;
+    margin: 20px auto;
+    /* max-width: 180px; */
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 2% 2%;
+    font-size: 2.7vw;
+    letter-spacing: 2px;
+    font-family: 'Amatic SC', cursive;
+     /* background-color: #97AAA1; */
+  padding: 9px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px 5px;
+  cursor: pointer;
+  /* border-radius: 30px; */
+    
+   
+}
+.button-wrap{
+ /* position: relative;
+ text-align: center;
+ display: inline-block;
+ padding: 1% 1%; */
+ 
+}
+
+#portfolio-btn.button {
+    color: rgba(230, 230, 230, 0.6);
+    box-shadow: rgba(255, 255, 255, 0.4) 0 0px 0px 2px inset;
+}
+
+#portfolio-btn.button:hover {
+    color: rgba(255, 255, 255, 0.85);
+    /* box-shadow: rgba(255, 255, 255, 0.7) 0 0px 0px 40px inset; */
+    box-shadow:#1abc9c  0 0px 0px 40px inset; 
+}
+
+
+#portfolio-btn.button2 {
+    color: rgba(230, 230, 230, 0.6);
+    box-shadow: rgba(255, 255, 255, 0.4) 0 0px 0px 2px inset;
+}
+
+#portfolio-btn.button2:hover {
+    color: rgba(255, 255, 255, 0.85);
+    /* box-shadow: rgba(255, 255, 255, 0.7) 0 0px 0px 40px inset; */
+    box-shadow:#1abc9c  0 0px 0px 40px inset; 
+}
+
+#portfolio-btn.button3 {
+    color: rgba(230, 230, 230, 0.6);
+    box-shadow: rgba(255, 255, 255, 0.4) 0 0px 0px 2px inset;
+}
+
+#portfolio-btn.button3:hover {
+    color: rgba(255, 255, 255, 0.85);
+    /* box-shadow: rgba(255, 255, 255, 0.7) 0 0px 0px 40px inset; */
+    box-shadow:#1abc9c  0 0px 0px 40px inset; 
+}
+#portfolio-btn.button4 {
+    color: rgba(230, 230, 230, 0.6);
+    box-shadow: rgba(255, 255, 255, 0.4) 0 0px 0px 2px inset;
+}
+
+#portfolio-btn.button4:hover {
+    color: rgba(255, 255, 255, 0.85);
+    /* box-shadow: rgba(255, 255, 255, 0.7) 0 0px 0px 40px inset; */
+    box-shadow:#1abc9c  0 0px 0px 40px inset; 
+}
+#portfolio-btn.button5 {
+    color: rgba(230, 230, 230, 0.6);
+    box-shadow: rgba(255, 255, 255, 0.4) 0 0px 0px 2px inset;
+   
+}
+
+#portfolio-btn.button5:hover {
+    color: rgba(255, 255, 255, 0.85);
+    /* box-shadow: rgba(255, 255, 255, 0.7) 0 0px 0px 40px inset; */
+    box-shadow:#1abc9c  0 0px 0px 40px inset; 
+    
+}
+
+
+
+/*   ====== FOOTER STUFF =====-= */
+
+
+.footer-padding {
+    /* padding-top: 30%;  */
+    /* padding-bottom: 60px; */
+    position: relative;
+	text-align: center;
+    bottom: 0;
+	width: 100%;
+	height: 60px;
+    background-color: #1abc9c;
+}
+
+.footer p {
+    padding-top: 2%;
+	margin-top: 25px;
+	font-size: 16px;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+   
+}
+
+/*  =======  ANIMATED GRADIENTs ========= */
+
+/* HOMEPAGE GRAD */
+
+.hex-linear {
+    background: linear-gradient(-90deg, rgb(26, 26, 26),rgb(187, 186, 186),  #353232, rgb(228, 228, 228));
+	background-size: 700% 400%;
+	-webkit-animation: Gradient 35s ease infinite;
+	-moz-animation: Gradient 35s ease infinite;
+	animation: Gradient 35s ease infinite;
+}
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+  }
+  
