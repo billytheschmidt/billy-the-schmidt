@@ -35,7 +35,7 @@ const homeStartingContent = "Lacus ve facilisis volutpat est velit egestas dui i
 const aboutContent = "Hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Non diam phasellus vestibulum lorem sed. Platea dictumst quisque sagittis purus sit. Egestas sed sed risus pretium quam vulputate dignissim suspendisse. Mauris in aliquam sem fringilla. Semper risus in hendrerit gravida rutrum quisque non tellus orci. Amet massa vitae tortor condimentum lacinia quis vel eros. Enim ut tellus elementum sagittis vitae. Mauris ultrices eros in cursus turpis massa tincidunt dui.";
 const contactContent = "Scelerisque eleifend donec pretium vulputate sapien. Rhoncus urna neque viverra justo nec ultrices. Arcu dui vivamus arcu felis bibendum. Consectetur adipiscing elit duis tristique. Risus viverra adipiscing at in tellus integer feugiat. Sapien nec sagittis aliquam malesuada bibendum arcu vitae. Consequat interdum varius sit amet mattis. Iaculis nunc sed augue lacus. Interdum posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Pulvinar elementum integer enim neque. Ultrices gravida dictum fusce ut placerat orci nulla. Mauris in aliquam sem fringilla ut morbi tincidunt. Tortor posuere ac ut consequat semper viverra nam libero.";
 const resumeContent = " If you made it this far you should contact me!";
-
+const blogStartingContent = " Theres nothing here just yet but the bare bones of an EJS Node/Express app connected to a MYSQL database with some table structures I'm working on, it will get users, proper authentication, comments and some other stuff... Eventually. I just crashed this whole site togther over the last few days of April 2019 to find some new work and I haven't had very much time to actually generate and populate any real content.  So this is the current state of my blog... Kinda weak sauce, I guess..."
 
 
 
@@ -83,7 +83,7 @@ app.get("/portfolio", function (req, res) {
 
 app.get("/blog", function (req, res) {
   res.render("blog", {
-    blogPara: homeStartingContent,
+    blogPara: blogStartingContent,
     newBlogPosts: blogPosts
   });
 });

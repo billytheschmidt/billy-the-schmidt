@@ -36,8 +36,8 @@ p {
 }
 
 .portfolio-header {
-    padding-top: 2%;
-    font-size: 6vw;
+    padding-top: 4%;
+    font-size: 7vw;
     letter-spacing: 4px;
     font-weight: 400;
     font-family: 'Josefin Sans', sans-serif;
@@ -144,7 +144,7 @@ p {
     border-style: solid;
     border-color: rgb(94, 93, 93);
     /* border-color: red green blue yellow; */
-    border-width: 6px 10px 7px 10px;
+    border-width: 6px 6px 6px 6px;
     /* transform: rotateY(180deg); */
 }
 
@@ -169,7 +169,7 @@ p {
 .wrap {
     position: relative;
     text-align: center;
-    /* padding: 4%; */
+    padding: 3%;
 }
 
 #portfolio-btn {
@@ -178,35 +178,17 @@ p {
     -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
     -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
     transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-    display: inline;
-    margin: 20px auto;
-    /* max-width: 180px; */
-    text-decoration: none;
-    border-radius: 4px;
-    padding: 2% 2%;
-    font-size: 2.7vw;
-    letter-spacing: 2px;
     font-family: 'Amatic SC', cursive;
-    /* background-color: #97AAA1; */
-    padding: 9px 50px;
-    text-align: center;
-    text-decoration: none;
     display: inline-block;
+    margin: 20px auto;
+    border-radius: 4px;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 9px 50px;
     margin: 5px 5px;
     cursor: pointer;
-    /* border-radius: 30px; */
-
-
+    font-size: 3vw;
 }
-
-.button-wrap {
-    /* position: relative;
- text-align: center;
- display: inline-block;
- padding: 1% 1%; */
-
-}
-
 
 /* ====== PORTFOLIO BUTTONS ====== */
 
@@ -246,7 +228,6 @@ p {
     font-size: 16px;
     color: #fff;
     font-family: 'Josefin Sans', sans-serif;
-
 }
 
 /*  =======  ANIMATED GRADIENTs ========= */
@@ -300,4 +281,99 @@ p {
     100% {
         background-position: 0% 50%
     }
+}
+
+
+/*  ====== RESPONSIVE SCREEN SIZES ====== */
+
+  @media only screen and (max-width: 767.98px) {
+  .nav > li > a {
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+	font-size: 5vw;
+
+   }
+.navbar-brand {
+    padding-bottom: 2%;
+    font-size: 9vw;
+    letter-spacing: 2px;
+    font-family: 'Amatic SC', cursive;
+    }
+
+  .portfolio-header {
+    padding-top: 4%;
+    font-size: 8vw;
+    letter-spacing: 4px;
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color: rgb(230, 230, 230);
+  }
+
+
+#portfolio-btn {
+    -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    margin: 20px auto;
+    border-radius: 4px;
+    font-size: 3vw;
+    letter-spacing: 2px;
+    font-family: 'Amatic SC', cursive;
+    padding: 9px 50px;
+    text-align: center;
+    display: inline-block;
+    margin: 5px 5px;
+    cursor: pointer;
+}
+
+}
+
+  @media only screen and (max-width: 575.98px) { 
+    .nav > li > a {
+        position: relative;
+        display: block;
+        padding: 10px 15px;
+        font-size: 7vw;
+  }
+
+  .navbar-brand {
+    padding-bottom: 2%;
+    font-size: 10vw;
+    letter-spacing: 2px;
+    font-family: 'Amatic SC', cursive;
+  }
+
+  .portfolio-header {
+    padding-top: 4%;
+    font-size: 15vw;
+    letter-spacing: 4px;
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color: rgb(230, 230, 230);
+  }
+
+  #portfolio-btn {
+    -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    margin: 20px auto;
+    border-radius: 4px;
+    font-size: 7vw;
+    letter-spacing: 2px;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    display: inline-block;
+    margin: 5px 5px;
+    cursor: pointer;
+
+
+}
+
 }
