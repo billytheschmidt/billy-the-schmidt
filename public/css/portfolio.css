@@ -14,11 +14,12 @@ p {
     ;
 }
 
-.slides{
+.slides {
     width: 80%;
     margin: 1% 10%;
     text-align: center;
 }
+
 .scroll-size {
     /* background: #F1F1FA; */
     width: 80%;
@@ -78,13 +79,21 @@ p {
     ;
 }
 
+/* .container{
+    padding-bottom:1%;
+}
+
+.navbar-brand p{
+    margin: 0px 0px 20px 0px;      
+   
+} */
 .navbar {
     background-color: rgb(230, 230, 230);
     /* background-color:white;   */
     /* background-image: linear-gradient(to bottom right, red, yellow); */
     /* background-image: linear-gradient(rgba(99, 0, 0, 0.66),rgba(0, 0, 82, 0.708), rgba(148, 148, 0, 0.92)); */
     /* background-image: linear-gradient(to bottom right, rgba(211, 9, 9, 0.783), rgba(146, 146, 76, 0.838)); */
-    padding-top: 1%;
+    padding-top: 2%;
     padding-bottom: 1%;
     border: 0;
     border-radius: 0;
@@ -95,7 +104,18 @@ p {
     color: rgb(66, 65, 65);
 }
 
-.navbar-nav {}
+.navbar-nav {
+    /* padding-top: 2%; */
+}
+
+.navbar-brand p {
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
 
 .navbar-nav li a:hover {
     color: #1abc9c !important;
@@ -103,12 +123,9 @@ p {
 
 /* HEADER NAME BILLY SCHMIDT COLOR */
 .navbar-default .navbar-brand {
+
     color: #2b2b2c;
 }
-
-/* MENU ITEMS COLOR  */
-.navbar-default .navbar-nav>li>a {}
-
 
 
 /* ====== BUTTON DIVS ===== */
@@ -142,15 +159,15 @@ p {
 
 /* ===== HOME PAGE STYLINGS ===== */
 
+
 .hex-div {
     position: relative;
     text-align: center;
     /* Border styles */
     border-style: solid;
-    border-color: rgb(94, 93, 93);
+    border-color: black;
     /* border-color: red green blue yellow; */
     border-width: 6px 6px 6px 6px;
-    /* transform: rotateY(180deg); */
 }
 
 .hex-img {
@@ -175,6 +192,12 @@ p {
     position: relative;
     text-align: center;
     padding: 3%;
+}
+
+.wrap-contact {
+    position: relative;
+    text-align: center;
+    padding: 1%;
 }
 
 #portfolio-btn {
@@ -216,24 +239,26 @@ p {
 
 
 /*   ====== FOOTER STUFF =====-= */
+
 .footer-padding {
-    /* padding-top: 30%;  */
-    /* padding-bottom: 60px; */
+    padding-bottom: 8px;
     position: relative;
     text-align: center;
     bottom: 0;
     width: 100%;
-    height: 60px;
     background-color: #1abc9c;
 }
 
 .footer p {
-    padding-top: 1%;
-    margin-top: 25px;
-    font-size: 16px;
+    padding: 3% 0 2% 0;
+    margin-top: 35px;
+    font-size: 18px;
     color: #fff;
     font-family: 'Josefin Sans', sans-serif;
+    bottom: 0;
+
 }
+
 
 /*  =======  ANIMATED GRADIENTs ========= */
 /* PORTFOLIO GRAD */
@@ -291,94 +316,112 @@ p {
 
 /*  ====== RESPONSIVE SCREEN SIZES ====== */
 
-  @media only screen and (max-width: 767.98px) {
-  .nav > li > a {
-	position: relative;
-	display: block;
-	padding: 10px 15px;
-	font-size: 5vw;
+@media only screen and (min-width: 1000px) {
 
-   }
-.navbar-brand {
-    padding-bottom: 2%;
-    font-size: 9vw;
-    letter-spacing: 2px;
-    font-family: 'Amatic SC', cursive;
+    .container-fluid>.navbar-collapse,
+    .container-fluid>.navbar-header,
+    .container>.navbar-collapse,
+    .container>.navbar-header {
+
+        padding-bottom: 1.25%;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 767.98px) {
+    .nav>li>a {
+        position: relative;
+        display: block;
+        padding: 10px 15px;
+        font-size: 5vw;
+
     }
 
-  .portfolio-header {
-    padding-top: 4%;
-    font-size: 8vw;
-    letter-spacing: 4px;
-    font-weight: 400;
-    font-family: 'Josefin Sans', sans-serif;
-    text-align: center;
-    color: rgb(230, 230, 230);
-  }
+    .navbar-brand {
+        padding-bottom: 2%;
+        font-size: 9vw;
+        letter-spacing: 2px;
+        font-family: 'Amatic SC', cursive;
+    }
+
+    .portfolio-header {
+        padding-top: 4%;
+        font-size: 8vw;
+        letter-spacing: 4px;
+        font-weight: 400;
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+        color: rgb(230, 230, 230);
+    }
 
 
-#portfolio-btn {
-    -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-    -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-    -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-    -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-    transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-    margin: 20px auto;
-    border-radius: 4px;
-    font-size: 3vw;
-    letter-spacing: 2px;
-    font-family: 'Amatic SC', cursive;
-    padding: 9px 50px;
-    text-align: center;
-    display: inline-block;
-    margin: 5px 5px;
-    cursor: pointer;
+    #portfolio-btn {
+        -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+        -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+        -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+        -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+        transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+        margin: 20px auto;
+        border-radius: 4px;
+        font-size: 3vw;
+        letter-spacing: 2px;
+        font-family: 'Amatic SC', cursive;
+        padding: 9px 50px;
+        text-align: center;
+        display: inline-block;
+        margin: 5px 5px;
+        cursor: pointer;
+    }
+
 }
 
-}
-
-  @media only screen and (max-width: 575.98px) { 
-    .nav > li > a {
+@media only screen and (max-width: 575.98px) {
+    .nav>li>a {
         position: relative;
         display: block;
         padding: 10px 15px;
         font-size: 7vw;
-  }
+    }
 
-  .navbar-brand {
-    padding-bottom: 2%;
-    font-size: 10vw;
-    letter-spacing: 2px;
-    font-family: 'Amatic SC', cursive;
-  }
+    .navbar-brand {
+        padding-bottom: 2%;
+        font-size: 10vw;
+        letter-spacing: 2px;
+        font-family: 'Amatic SC', cursive;
+    }
 
-  .portfolio-header {
-    padding-top: 4%;
-    font-size: 15vw;
-    letter-spacing: 4px;
-    font-weight: 400;
-    font-family: 'Josefin Sans', sans-serif;
-    text-align: center;
-    color: rgb(230, 230, 230);
-  }
+    .portfolio-header {
+        padding-top: 4%;
+        font-size: 15vw;
+        letter-spacing: 4px;
+        font-weight: 400;
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+        color: rgb(230, 230, 230);
+    }
 
-  #portfolio-btn {
-    -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-    -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-    -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-    -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-    transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-    margin: 20px auto;
-    border-radius: 4px;
-    font-size: 7vw;
-    letter-spacing: 2px;
-    font-family: 'Amatic SC', cursive;
-    text-align: center;
-    display: inline-block;
-    margin: 5px 5px;
-    cursor: pointer;
+    #portfolio-btn {
+        -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+        -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+        -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+        -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+        transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+        margin: 20px auto;
+        border-radius: 4px;
+        font-size: 7vw;
+        letter-spacing: 2px;
+        font-family: 'Amatic SC', cursive;
+        text-align: center;
+        display: inline-block;
+        margin: 5px 5px;
+        cursor: pointer;
 
 
-}
+    }
+
+
+
 
 }
