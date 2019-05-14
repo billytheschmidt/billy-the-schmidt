@@ -12,163 +12,122 @@
     <script src="/javascript/lazy_img.js"></script>
     <title>Billy the Schmidt</title>
 
-    <link rel="stylesheet" type="text/css" href="/css/default.css" />
-		<link rel="stylesheet" type="text/css" href="/css/component.css" />
-		<script src="/javascript/modernizr.custom.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="/css/default.css" /> -->
+		<!-- <link rel="stylesheet" type="text/css" href="/css/component.css" /> -->
+		<!-- <script src="/javascript/modernizr.custom.js"></script> -->
 </head>
 
 
 
-<nav class="navbar navbar-default">
-        <div class="container">
+
+<a id="back-home-btn" class ="back-home-btn" href="/">HOME</a>
+<nav class="navbar navbar-default ">
+  <div class="container">
+
+    <div class="navbar-header">
+      <p class="navbar-brand">Billy Schmidt </p>
+    </div>
     
-          <div class="navbar-header">
-            <p class="navbar-brand">Billy Schmidt </p>
-          </div>
-          
-            <ul class="nav navbar-nav navbar-right">
-              <li id="home"><a class ="home_btn" href="/">HOME</a></li>
-              <li id="about"><a class ="about_btn" href="/about">ABOUT</a></li>
-              <li id="portfolio"><a class ="portfolio_btn" href="/portfolio">PORTFOLIO</a></li>
-              <li id="resume"><a class ="resume_btn" href="/resume">RESUME</a></li>
-              <li id="blog"><a class ="blog_btn"  href="/blog">BLOG</a></li>
-              <li id="contact"><a class ="contact_btn"  href="/contact">CONTACT</a></li>
-            </ul>
-        </div>
-      </nav>
+  </div>
+</nav>
+ 
     
    
 
 <body class ='body-even-darker'>
 
 
-      <h1 class = "portfolio-header">JARS AND SKULLS</h1>
+      <h1 class = "portfolio-header">PORTFOLIO: JARS & SKULLS</h1>
     
       <div class="wrap">
   
       
-            <!-- <a id ="portfolio-btn" href="/html/jarsandskulls.html" class="btn button1" > JARS AND SKULLS</a> -->
-            <a id ="portfolio-btn" href="/html/modernsavage.html" class="btn button2">MODERN SAVAGE</a>
-            <a id ="portfolio-btn" href="/html/photography.html" class="btn button3">PHOTOGRAPHY</a>
-            <a id ="portfolio-btn" href="/html/electrics.html" class="btn button4">ELECTRIC</a>
-            <a id ="portfolio-btn" href="/html/museumwork.html" class="btn button5">MUSEUM WORK</a>
-            <a id ="portfolio-btn" href="/html/illustrations.html" class="btn button6">ILLUSTRATIONS</a>
-            <a id ="portfolio-btn" href="/html/mushrooms.html" class="btn button7">MUSHROOMS</a>
+        <a id ="portfolio-btn" href="/html/museumwork.html" class="btn button5">MUSEUM WORK</a>
+        <a id ="portfolio-btn" href="/html/modernsavage.html" class="btn button2">MODERN SAVAGE</a>
+        <a id ="portfolio-btn" href="/html/photography.html" class="btn button3">PHOTOGRAPHY</a>
+        <a id ="portfolio-btn" href="/html/electrics.html" class="btn button4">ELECTRIC</a>
+        <!-- <a id ="portfolio-btn" href="/html/jarsandskulls.html" class="btn button1" > JARS & SKULLS</a> -->
+        <a id ="portfolio-btn" href="/html/illustrations.html" class="btn button6">ILLUSTRATIONS</a>
+        <a id ="portfolio-btn" href="/html/mushrooms.html" class="btn button7">MUSHROOMS</a>
             
       </div>
     </div>
 
 
-    <div class="container">
+    <div class="photo-container">
 
-        <!-- </header> -->
-        <ul class="grid effect-1" id="grid">
-
+        <main class="img-flex">
           <li><img src="/images/jars_and_skulls/jars_skulls-33.jpg"></a></li>
           <li><img src="/images/jars_and_skulls/jars_skulls-16.jpg"></a></li>
           <li><img  src="/images/jars_and_skulls/jars_skulls-28.jpg"></a></li>
           <li><img src="/images/jars_and_skulls/jars_skulls-31.jpg"></a></li>
-          <li><img src="/images/jars_and_skulls/jars_skulls-49.jpg"></a></li>
+          <li><img class="lazy" data-src="/images/jars_and_skulls/jars_skulls-49.jpg"></a></li>
 
-                <li><img src="/images/jars_and_skulls/jars_skulls-3.jpg"></a></li>
+                <li><img class="lazy" data-src="/images/jars_and_skulls/jars_skulls-3.jpg"></a></li>
                 
-                <li><img  src="/images/jars_and_skulls/jars_skulls-4.jpg"></a></li>
-                <li><img src="/images/jars_and_skulls/jars_skulls-5.jpg"></a></li>
-                <li><img  src="/images/jars_and_skulls/jars_skulls-34.jpg"></a></li>
-                <li><img src="/images/jars_and_skulls/jars_skulls-6.jpg"></a></li>
-                <li><img src="/images/jars_and_skulls/jars_skulls-47.jpg"></a></li>
-                <li><img src="/images/jars_and_skulls/jars_skulls-7.jpg"></a></li>
-                <li><img src="/images/jars_and_skulls/jars_skulls-57.jpg"></a></li>
-                <li><img  src="/images/jars_and_skulls/jars_skulls-8.jpg"></a></li>
-                <li><img src="/images/jars_and_skulls/jars_skulls-9.jpg"></a></li>
-                <li><img  src="/images/jars_and_skulls/jars_skulls-10.jpg"></a></li>
-                <li><img src="/images/jars_and_skulls/jars_skulls-11.jpg"></a></li>
-                <li><img  src="/images/jars_and_skulls/jars_skulls-12.jpg"></a></li>
-                <li><img src="/images/jars_and_skulls/jars_skulls-13.jpg"></a></li>
-                <li><img  src="/images/jars_and_skulls/jars_skulls-14.jpg"></a></li>
-                <li><img src="/images/jars_and_skulls/jars_skulls-15.jpg"></a></li>
+                <li><img  class="lazy" data-src="/images/jars_and_skulls/jars_skulls-4.jpg"></a></li>
+                <li><img class="lazy" data-src="/images/jars_and_skulls/jars_skulls-5.jpg"></a></li>
+                <li><img  class="lazy" data-src="/images/jars_and_skulls/jars_skulls-34.jpg"></a></li>
+                <li><img class="lazy" data-src="/images/jars_and_skulls/jars_skulls-6.jpg"></a></li>
+                <li><img class="lazy" data-src="/images/jars_and_skulls/jars_skulls-47.jpg"></a></li>
+                <li><img class="lazy" data-src="/images/jars_and_skulls/jars_skulls-7.jpg"></a></li>
+                <li><img class="lazy" data-src="/images/jars_and_skulls/jars_skulls-57.jpg"></a></li>
+                <li><img  class="lazy" data-src="/images/jars_and_skulls/jars_skulls-8.jpg"></a></li>
+                <li><img class="lazy" data-src="/images/jars_and_skulls/jars_skulls-9.jpg"></a></li>
+                <li><img  class="lazy" data-src="/images/jars_and_skulls/jars_skulls-10.jpg"></a></li>
+                <li><img class="lazy" data-src="/images/jars_and_skulls/jars_skulls-11.jpg"></a></li>
+                <li><img  class="lazy" data-src="/images/jars_and_skulls/jars_skulls-12.jpg"></a></li>
+                <li><img class="lazy" data-src="/images/jars_and_skulls/jars_skulls-13.jpg"></a></li>
+                <li><img  class="lazy" data-src="/images/jars_and_skulls/jars_skulls-14.jpg"></a></li>
+                <li><img class="lazy" data-src="/images/jars_and_skulls/jars_skulls-15.jpg"></a></li>
                
-                <li><img src="/images/jars_and_skulls/jars_skulls-17.jpg"></a></li>
-                <li><img  src="/images/jars_and_skulls/jars_skulls-18.jpg"></a></li>
-                <li><img src="/images/jars_and_skulls/jars_skulls-19.jpg"></a></li>
-                <li><img src="/images/jars_and_skulls/jars_skulls-20.jpg"></a></li>
-                <li><img src="/images/jars_and_skulls/jars_skulls-21.jpg"></a></li>
-                <li><img  src="/images/jars_and_skulls/jars_skulls-22.jpg"></a></li>
-                <li><img src="/images/jars_and_skulls/jars_skulls-23.jpg"></a></li>
-                <li><img  src="/images/jars_and_skulls/jars_skulls-24.jpg"></a></li>
-                <li><img src="/images/jars_and_skulls/jars_skulls-25.jpg"></a></li>
-                <li><img src="/images/jars_and_skulls/jars_skulls-26.jpg"></a></li>
-                <li><img src="/images/jars_and_skulls/jars_skulls-27.jpg"></a></li>
+                <li><img class="lazy" data-src="/images/jars_and_skulls/jars_skulls-17.jpg"></a></li>
+                <li><img  class="lazy" data-src="/images/jars_and_skulls/jars_skulls-18.jpg"></a></li>
+                <li><img class="lazy" data-src="/images/jars_and_skulls/jars_skulls-19.jpg"></a></li>
+                <li><img class="lazy" data-src="/images/jars_and_skulls/jars_skulls-20.jpg"></a></li>
+                <li><img class="lazy" data-src="/images/jars_and_skulls/jars_skulls-21.jpg"></a></li>
+                <li><img  class="lazy" data-src="/images/jars_and_skulls/jars_skulls-22.jpg"></a></li>
+                <li><img class="lazy" data-src="/images/jars_and_skulls/jars_skulls-23.jpg"></a></li>
+                <li><img  class="lazy" data-src="/images/jars_and_skulls/jars_skulls-24.jpg"></a></li>
+                <li><img class="lazy" data-src="/images/jars_and_skulls/jars_skulls-25.jpg"></a></li>
+                <li><img class="lazy" data-src="/images/jars_and_skulls/jars_skulls-26.jpg"></a></li>
+                <li><img class="lazy" data-src="/images/jars_and_skulls/jars_skulls-27.jpg"></a></li>
                 
-          
-                <li><img src="/images/jars_and_skulls/jars_skulls-30.jpg"></a></li>
+                <li><img class="lazy" data-src="/images/jars_and_skulls/jars_skulls-30.jpg"></a></li>
                 
-                <li><img  src="/images/jars_and_skulls/jars_skulls-32.jpg"></a></li>
+                <li><img  class="lazy" data-src="/images/jars_and_skulls/jars_skulls-32.jpg"></a></li>
               
-                
-                <li><img src="/images/jars_and_skulls/jars_skulls-35.jpg"></a></li>
-                <li><img src="/images/jars_and_skulls/jars_skulls-36.jpg"></a></li>
-                <li><img src="/images/jars_and_skulls/jars_skulls-37.jpg"></a></li>
-                <li><img src="/images/jars_and_skulls/jars_skulls-1.jpg"></a></li>
-                <li><img  src="/images/jars_and_skulls/jars_skulls-38.jpg"></a></li>
-                <li><img src="/images/jars_and_skulls/jars_skulls-39.jpg"></a></li>
-                <li><img src="/images/jars_and_skulls/jars_skulls-40.jpg"></a></li>
-                <li><img src="/images/jars_and_skulls/jars_skulls-41.jpg"></a></li>
-                <li><img  src="/images/jars_and_skulls/jars_skulls-42.jpg"></a></li>
-                <li><img src="/images/jars_and_skulls/jars_skulls-43.jpg"></a></li>
-                <li><img  src="/images/jars_and_skulls/jars_skulls-44.jpg"></a></li>
-                <li><img src="/images/jars_and_skulls/jars_skulls-45.jpg"></a></li>
-                <li><img src="/images/jars_and_skulls/jars_skulls-46.jpg"></a></li>
+                <li><img class="lazy" data-src="/images/jars_and_skulls/jars_skulls-36.jpg"></a></li>
+                <li><img class="lazy" data-src="/images/jars_and_skulls/jars_skulls-37.jpg"></a></li>
+                <li><img class="lazy" data-src="/images/jars_and_skulls/jars_skulls-1.jpg"></a></li>
+                <li><img  class="lazy" data-src="/images/jars_and_skulls/jars_skulls-38.jpg"></a></li>
+                <li><img class="lazy" data-src="/images/jars_and_skulls/jars_skulls-39.jpg"></a></li>
+                <li><img class="lazy" data-src="/images/jars_and_skulls/jars_skulls-40.jpg"></a></li>
+                <li><img class="lazy" data-src="/images/jars_and_skulls/jars_skulls-41.jpg"></a></li>
+                <li><img  class="lazy" data-src="/images/jars_and_skulls/jars_skulls-42.jpg"></a></li>
+                <li><img class="lazy" data-src="/images/jars_and_skulls/jars_skulls-43.jpg"></a></li>
+                <li><img  class="lazy" data-src="/images/jars_and_skulls/jars_skulls-44.jpg"></a></li>
+                <li><img class="lazy" data-src="/images/jars_and_skulls/jars_skulls-45.jpg"></a></li>
+                <li><img class="lazy" data-src="/images/jars_and_skulls/jars_skulls-46.jpg"></a></li>
                
-                <li><img  src="/images/jars_and_skulls/jars_skulls-48.jpg"></a></li>
+                <li><img  class="lazy" data-src="/images/jars_and_skulls/jars_skulls-48.jpg"></a></li>
               
-                <li><img src="/images/jars_and_skulls/jars_skulls-50.jpg"></a></li>
-                <li><img src="/images/jars_and_skulls/jars_skulls-51.jpg"></a></li>
-                <li><img  src="/images/jars_and_skulls/jars_skulls-52.jpg"></a></li>
-                <li><img src="/images/jars_and_skulls/jars_skulls-53.jpg"></a></li>
-                <li><img  src="/images/jars_and_skulls/jars_skulls-54.jpg"></a></li>
-                <li><img src="/images/jars_and_skulls/jars_skulls-55.jpg"></a></li>
-                <li><img src="/images/jars_and_skulls/jars_skulls-56.jpg"></a></li>
+                <li><img class="lazy" data-src="/images/jars_and_skulls/jars_skulls-50.jpg"></a></li>
+                <li><img class="lazy" data-src="/images/jars_and_skulls/jars_skulls-51.jpg"></a></li>
+                <li><img  class="lazy" data-src="/images/jars_and_skulls/jars_skulls-52.jpg"></a></li>
+                <li><img class="lazy" data-src="/images/jars_and_skulls/jars_skulls-53.jpg"></a></li>
+                <li><img  class="lazy" data-src="/images/jars_and_skulls/jars_skulls-54.jpg"></a></li>
+                <li><img class="lazy" data-src="/images/jars_and_skulls/jars_skulls-55.jpg"></a></li>
+                <li><img class="lazy" data-src="/images/jars_and_skulls/jars_skulls-56.jpg"></a></li>
              
-                <li><img src="/images/jars_and_skulls/jars_skulls-2.jpg"></a></li>
-        
-			</ul>
-		</div>
-    
+                <li><img class="lazy" data-src="/images/jars_and_skulls/jars_skulls-2.jpg"></a></li>
 
-        <script src="/javascript/masonry.pkgd.min.js"></script>
-        <script src="/javascript/imagesloaded.js"></script>
-        <script src="/javascript/classie.js"></script>
-        <script src="/javascript/AnimOnScroll.js"></script>
-        <script>
-            new AnimOnScroll( document.getElementById( 'grid' ), {
-                minDuration : 0.4,
-                maxDuration : 0.7,
-                viewportFactor : 0.2
-            } );
-        </script>
+			</main>
+		</div>
+  
 
 </body>
 
-
-<nav class="navbar navbar-default">
-    <div class="container">
-
-        <div class="navbar-header">
-            <p class="navbar-brand">Billy Schmidt </p>
-        </div>
-
-        <ul class="nav navbar-nav navbar-right">
-            <!-- 6 -->
-            <li id="home"><a class="home_btn" href="/">HOME</a></li>
-            <li id="about"><a class="about_btn" href="/about">ABOUT</a></li>
-            <li id="portfolio"><a class="portfolio_btn" href="/portfolio">PORTFOLIO</a></li>
-            <li id="resume"><a class="resume_btn" href="/resume">RESUME</a></li>
-            <li id="blog"><a class="blog_btn" href="/blog">BLOG</a></li>
-            <li id="contact"><a class="contact_btn" href="/contact">CONTACT</a></li>
-        </ul>
-    </div>
-</nav>
 
 
 

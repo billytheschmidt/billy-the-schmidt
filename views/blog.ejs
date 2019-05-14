@@ -3,13 +3,9 @@
 
 <body class ='body-even-darker'>
 
-  
   <div class="blog-div">
       <img id = "hex-img" src="/images/SVG/hex.svg" class="triangle-linear" alt="">
     </div>
-
-
-
 
 
   <h1 class = "resume-header">BLOG</h1>
@@ -26,7 +22,6 @@
   </div>
 
 
-
   <% for (var i=0; i<newBlogPosts.length; i++ ) { %>
   <h1>
     <%= newBlogPosts[i].title %>
@@ -36,9 +31,6 @@
    <%= console.log(newBlogPosts[i].title);%>
     <a href=<%='/posts/'+newBlogPosts[i].title %>>Read More</a>
   </p>
-
   <% } %>
-
-
 
   <%- include("partials/footer"); -%>

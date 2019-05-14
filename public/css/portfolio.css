@@ -11,8 +11,9 @@ p {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 3vw;
     line-height: 3vw;
-    ;
+
 }
+
 
 .slides {
     width: 80%;
@@ -21,13 +22,90 @@ p {
 }
 
 .scroll-size {
-    /* background: #F1F1FA; */
     width: 80%;
-    /* height: 300px; */
     display: block;
     margin: 10px auto;
     border: 0;
 }
+
+
+
+/* IMAGE GRID SETTINGS  */
+
+
+.img-flex {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    align-items: start;
+    justify-items: center;
+    /* padding-bottom: 5%; */
+    padding: 5% 10% 5% 10%;
+}
+
+
+.img-flex img {
+    /* border: 1px solid rgba(0, 0, 0, 0.3); */
+    /* box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3); */
+    max-width: 100%;
+    padding: 2% 1% 2% 1%;
+}
+
+.img-flex img:nth-child(2) {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+
+/* MUSEUM PAGE */
+.img-flex-museum {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    align-items: start;
+    justify-items: center;
+    /* padding-bottom: 5%; */
+    /* padding: 5% 10% 5% 10%; */
+}
+
+.img-flex-museum img {
+    /* border: 10px solid rgba(0, 0, 0, 0.3); */
+    /* box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3); */
+    max-width: 100%;
+}
+
+.img-flex-museum img:nth-child(2) {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+
+/* Mushroom Page */
+
+.img-flex-mush {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    align-items: start;
+    justify-items: center;
+   padding: 0 6% 0 6%;
+}
+
+.img-flex-mush img {
+    /* border: 10px solid rgba(0, 0, 0, 0.3); */
+    /* box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3); */
+    max-width: 100%;
+}
+
+.img-flex-mush img:nth-child(2) {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+
 
 .body-dark {
     background-color: rgb(50, 50, 50);
@@ -50,6 +128,7 @@ p {
     text-align: center;
     color: rgb(230, 230, 230);
 }
+
 
 .small-portfolio-header {
     color: white;
@@ -79,20 +158,9 @@ p {
     ;
 }
 
-/* .container{
-    padding-bottom:1%;
-}
-
-.navbar-brand p{
-    margin: 0px 0px 20px 0px;      
-   
-} */
 .navbar {
     background-color: rgb(230, 230, 230);
-    /* background-color:white;   */
-    /* background-image: linear-gradient(to bottom right, red, yellow); */
-    /* background-image: linear-gradient(rgba(99, 0, 0, 0.66),rgba(0, 0, 82, 0.708), rgba(148, 148, 0, 0.92)); */
-    /* background-image: linear-gradient(to bottom right, rgba(211, 9, 9, 0.783), rgba(146, 146, 76, 0.838)); */
+
     padding-top: 2%;
     padding-bottom: 1%;
     border: 0;
@@ -104,9 +172,7 @@ p {
     color: rgb(66, 65, 65);
 }
 
-.navbar-nav {
-    /* padding-top: 2%; */
-}
+
 
 .navbar-brand p {
     float: left;
@@ -117,9 +183,12 @@ p {
     line-height: 20px;
 }
 
-.navbar-nav li a:hover {
+.navbar-nav li a:hover,
+.navbar-nav li a.hover {
     color: #1abc9c !important;
 }
+
+
 
 /* HEADER NAME BILLY SCHMIDT COLOR */
 .navbar-default .navbar-brand {
@@ -129,6 +198,12 @@ p {
 
 
 /* ====== BUTTON DIVS ===== */
+
+
+/* portfolio home header button hover state */
+a:hover {
+    text-decoration: none;
+}
 
 .home_btn {
     border: solid;
@@ -166,7 +241,6 @@ p {
     /* Border styles */
     border-style: solid;
     border-color: black;
-    /* border-color: red green blue yellow; */
     border-width: 6px 6px 6px 6px;
 }
 
@@ -184,7 +258,6 @@ p {
     border-radius: 5px;
     padding: 2% 2% 2% 5%;
 }
-
 
 
 /* PORTFOLIO BUTTONS */
@@ -215,16 +288,43 @@ p {
     padding: 9px 50px;
     margin: 5px 5px;
     cursor: pointer;
+    font-size: 4vw;
+}
+
+.back-home-btn a {
+    color: rgb(66, 65, 65);
+}
+
+.back-home-btn {
+    position: absolute;
+    top: 16px;
+    /* left: 500px; */
+    left: 25em;
+    z-index: 10;
     font-size: 3vw;
+    letter-spacing: 1px;
+    border: solid;
+    border-width: 2px;
+    /* border-radius: 5%; */
+
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    border-radius: 4px;
+    display: block;
+    margin: 2px 2px;
+    cursor: pointer;
+    -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+
+
 }
 
 /* ====== PORTFOLIO BUTTONS ====== */
 
-/* #portfolio-btn.button2 {
-    color: rgba(158, 12, 12, 0.6);
-    box-shadow: rgba(255, 255, 255, 0.4) 0 0px 0px 2px inset;
-} */
-/* all portfolio buttons colored grey rollover - teal */
+
 #portfolio-btn {
     color: rgba(230, 230, 230, 0.6);
     box-shadow: rgba(255, 255, 255, 0.4) 0 0px 0px 2px inset;
@@ -232,9 +332,20 @@ p {
 
 #portfolio-btn:hover {
     color: rgba(255, 255, 255, 0.85);
-    /* box-shadow: rgba(255, 255, 255, 0.7) 0 0px 0px 40px inset; */
-    box-shadow: #1abc9c 0 0px 0px 40px inset;
+    box-shadow: #1abc9c 0 0px 0px 60px inset;
+}
 
+/* PORTFOLIO HEADER HOME BUTTON */
+#back-home-btn {
+    padding: .5% 4% .5% 4%;
+    color: rgb(46, 46, 47);
+
+}
+
+#back-home-btn:hover {
+    /* color: rgba(37, 37, 37, 0.85); */
+    box-shadow: rgba(255, 255, 255, 0.7) 0 0px 0px 40px inset;
+    box-shadow: #1abc9c 0 0px 0px 50px inset;
 }
 
 
@@ -250,6 +361,7 @@ p {
 }
 
 .footer p {
+
     padding: 3% 0 2% 0;
     margin-top: 35px;
     font-size: 18px;
@@ -377,50 +489,194 @@ p {
 
 }
 
+
+
+/* SMALL SCREENS */
 @media only screen and (max-width: 575.98px) {
-    .nav>li>a {
-        position: relative;
-        display: block;
-        padding: 10px 15px;
-        font-size: 7vw;
+
+
+
+    /* IMAGE GRID SETTINGS  */
+    .img-flex {
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        align-items: start;
+        justify-items: center;
+        padding-bottom: 5%;
     }
 
-    .navbar-brand {
-        padding-bottom: 2%;
-        font-size: 10vw;
-        letter-spacing: 2px;
-        font-family: 'Amatic SC', cursive;
+    .img-flex img {
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+        max-width: 100%;
     }
 
-    .portfolio-header {
-        padding-top: 4%;
-        font-size: 15vw;
-        letter-spacing: 4px;
+    .img-flex img:nth-child(2) {
+        grid-column: span 3;
+        grid-row: span 2;
+    }
+
+    #contactPara-style {
+        /* padding-top: 4%; */
+        font-size: 6vw;
+        line-height: 7vw;
         font-weight: 400;
         font-family: 'Josefin Sans', sans-serif;
         text-align: center;
         color: rgb(230, 230, 230);
     }
 
+    .contact-div {
+        width: 100%;
+    }
+
+    .footer-padding {
+        padding-bottom: 8px;
+        position: relative;
+        text-align: center;
+        bottom: 0;
+        width: 100%;
+        background-color: #1abc9c;
+    }
+
+    .footer p {
+
+        padding: 3% 0 2% 0;
+        margin-top: 35px;
+        font-size: 18px;
+        color: #fff;
+        font-family: 'Josefin Sans', sans-serif;
+        bottom: 0;
+
+    }
+
+    /* NAV MENU BUTTONS */
+
+    /* button wrap */
+    .wrap {
+        padding: 0 0 3% 0;
+    }
+
+
+    /* INDIVIDUAL BTNS  */
+
+
+
+    .back-home-btn {
+        position: absolute;
+        top: 10px;
+        /* left: 300px; */
+        left: 14em;
+        z-index: 10;
+        font-size: 5vw;
+        letter-spacing: 1px;
+        border: solid;
+        border-width: 2px;
+        border-radius: 5%;
+        font-family: 'Amatic SC', cursive;
+        text-align: center;
+        margin: 2px auto;
+        border-radius: 2px;
+        display: block;
+        cursor: pointer;
+        -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+        -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+        -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+        -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+        transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+
+
+    }
+
+    /* HOME BUTTON */
+    #back-home-btn {
+        padding: 1% 5% 1% 5%;
+        color: rgba(0, 0, 0, 0.6);
+        /* box-shadow: rgba(20, 20, 20, 0.4) 0 0px 0px 2px inset; */
+    }
+
+    #back-home-btn:hover {
+        /* color: rgba(37, 37, 37, 0.85); */
+        /* box-shadow: rgba(255, 255, 255, 0.7) 0 0px 0px 40px inset; */
+        box-shadow: #1abc9c 0 0px 0px 40px inset;
+    }
+
+
+
+
+
+
+    html body.body-even-darker div.wrap a#portfolio-btn.btn {
+        padding: 10px 20px 10px 20px;
+        font-size: 4vw;
+    }
+
+    .home_btn {
+        border: solid;
+        border-width: 2px;
+        border-radius: 5%;
+    }
+
+    .portfolio_btn {
+        border: solid;
+        border-width: 2px;
+        border-radius: 5%;
+    }
+
+    .blog_btn {
+        border: solid;
+        border-width: 2px;
+        border-radius: 5%;
+    }
+
+    .container {
+        height: 10px !important;
+    }
+
+    .nav>li>a {
+        position: relative;
+        display: block;
+        padding: 5px 5px;
+        font-size: 10vw;
+    }
+
+    .navbar-brand {
+        font-size: 10vw;
+        font-family: 'Amatic SC', cursive;
+        margin: auto;
+    }
+
+    .portfolio-header {
+        padding: 4% 0 3% 0;
+        margin: auto;
+        font-size: 10vw;
+        font-weight: 400;
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+        color: rgb(230, 230, 230);
+    }
+
+   
     #portfolio-btn {
         -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
         -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
         -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
         -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
         transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-        margin: 20px auto;
-        border-radius: 4px;
-        font-size: 7vw;
-        letter-spacing: 2px;
+        margin: 2px auto;
+        border-radius: 2px;
+        font-size: 4.2vw;
+        letter-spacing: 1px;
         font-family: 'Amatic SC', cursive;
         text-align: center;
-        display: inline-block;
-        margin: 5px 5px;
+        display: inline block;
+        margin: 2px 2px;
         cursor: pointer;
 
 
     }
-
 
 
 
